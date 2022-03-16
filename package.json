@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-from-scalar",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "Convert a scalar value to a zero-dimensional ndarray.",
   "license": "Apache-2.0",
   "author": {
