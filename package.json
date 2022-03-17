@@ -42,6 +42,7 @@
     "@stdlib/assert-is-number": "^0.0.x",
     "@stdlib/ndarray-base-buffer": "^0.0.x",
     "@stdlib/ndarray-ctor": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x",
     "@stdlib/types": "^0.0.x"
   },
   "devDependencies": {
