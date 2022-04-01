@@ -1,0 +1,31 @@
+{
+  "name": "@stdlib/ndarray-from-scalar",
+  "version": "0.0.0",
+  "description": "Convert a scalar value to a zero-dimensional ndarray.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/ndarray-from-scalar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "types",
+    "data",
+    "structure",
+    "ndarray",
+    "scalar",
+    "wrap",
+    "convert"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
