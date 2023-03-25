@@ -34,19 +34,35 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-from-scalar
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import scalar2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-from-scalar@esm/index.mjs';
+var scalar2ndarray = require( '@stdlib/ndarray-from-scalar' );
 ```
 
-#### scalar2ndarray( value\[, dtype] )
+#### scalar2ndarray( value\[, options] )
 
-Returns a zero-dimensional [`ndarray`][@stdlib/ndarray/ctor] containing a provided scalar `value` and having a specified [data type][@stdlib/ndarray/dtypes].
+Returns a zero-dimensional [`ndarray`][@stdlib/ndarray/ctor] containing a provided scalar `value`.
 
 ```javascript
 var x = scalar2ndarray( 1.0 );
@@ -62,16 +78,24 @@ var v = x.get();
 // returns 1.0
 ```
 
-If `dtype` is not provided and `value`
+The function accepts the following `options`:
+
+-   **dtype**: output array [data type][@stdlib/ndarray/dtypes].
+-   **order**: array order (i.e., memory layout), which is either `row-major` (C-style) or `column-major` (Fortran-style). Default: `'row-major'`.
+-   **readonly**: `boolean` indicating whether an array should be **read-only**. Default: `false`.
+
+If a `dtype` option is not provided and `value`
 
 -   is a `number`, the default [data type][@stdlib/ndarray/dtypes] is `'float64'`.
 -   is a complex number object, the default [data type][@stdlib/ndarray/dtypes] is `'complex128'`.
 -   is any other value type, the default [data type][@stdlib/ndarray/dtypes] is `'generic'`.
 
-To explicitly specify the [data type][@stdlib/ndarray/dtypes] of the returned [`ndarray`][@stdlib/ndarray/ctor], provide a `dtype` argument.
+To explicitly specify the [data type][@stdlib/ndarray/dtypes] of the returned [`ndarray`][@stdlib/ndarray/ctor], provide a `dtype` option.
 
 ```javascript
-var x = scalar2ndarray( 1.0, 'float32' );
+var x = scalar2ndarray( 1.0, {
+    'dtype': 'float32'
+});
 // returns <ndarray>
 
 var sh = x.shape;
@@ -94,7 +118,7 @@ var v = x.get();
 
 ## Notes
 
--   If `value` is a number and [`dtype`][@stdlib/ndarray/dtypes] is a complex [data type][@stdlib/ndarray/dtypes], the function returns a zero-dimensional [`ndarray`][@stdlib/ndarray/ctor] containing a complex number whose real component equals the provided scalar `value` and whose imaginary component is zero.
+-   If `value` is a number and `options.dtype` is a complex [data type][@stdlib/ndarray/dtypes], the function returns a zero-dimensional [`ndarray`][@stdlib/ndarray/ctor] containing a complex number whose real component equals the provided scalar `value` and whose imaginary component is zero.
 
 </section>
 
@@ -108,14 +132,9 @@ var v = x.get();
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@esm/index.mjs';
-import scalar2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-from-scalar@esm/index.mjs';
+```javascript
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var scalar2ndarray = require( '@stdlib/ndarray-from-scalar' );
 
 // Get a list of data types:
 var dt = dtypes();
@@ -124,13 +143,11 @@ var dt = dtypes();
 var x;
 var i;
 for ( i = 0; i < dt.length; i++ ) {
-    x = scalar2ndarray( i, dt[ i ] );
+    x = scalar2ndarray( i, {
+        'dtype': dt[ i ]
+    });
     console.log( x.get() );
 }
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -162,7 +179,7 @@ for ( i = 0; i < dt.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -179,7 +196,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -206,7 +223,7 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 -->
 
 [chat-image]: https://img.shields.io/gitter/room/stdlib-js/stdlib.svg
-[chat-url]: https://gitter.im/stdlib-js/stdlib/
+[chat-url]: https://app.gitter.im/#/room/#stdlib-js_stdlib:gitter.im
 
 [stdlib]: https://github.com/stdlib-js/stdlib
 
@@ -222,9 +239,9 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-from-scalar/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/stdlib/tree/esm
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/stdlib
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/stdlib/tree/esm
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/stdlib
 
 </section>
 
