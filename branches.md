@@ -38,12 +38,12 @@ C -->|bundle| D[esm];
 C -->|bundle| E[deno];
 C -->|bundle| F[umd];
 
-click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/from-scalar"
-click B href "https://github.com/stdlib-js/ndarray-from-scalar/tree/main"
-click C href "https://github.com/stdlib-js/ndarray-from-scalar/tree/production"
-click D href "https://github.com/stdlib-js/ndarray-from-scalar/tree/esm"
-click E href "https://github.com/stdlib-js/ndarray-from-scalar/tree/deno"
-click F href "https://github.com/stdlib-js/ndarray-from-scalar/tree/umd"
+%% click A href "https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/from-scalar"
+%% click B href "https://github.com/stdlib-js/ndarray-from-scalar/tree/main"
+%% click C href "https://github.com/stdlib-js/ndarray-from-scalar/tree/production"
+%% click D href "https://github.com/stdlib-js/ndarray-from-scalar/tree/esm"
+%% click E href "https://github.com/stdlib-js/ndarray-from-scalar/tree/deno"
+%% click F href "https://github.com/stdlib-js/ndarray-from-scalar/tree/umd"
 ```
 
 [stdlib-url]: https://github.com/stdlib-js/stdlib/tree/develop/lib/node_modules/%40stdlib/ndarray/from-scalar
