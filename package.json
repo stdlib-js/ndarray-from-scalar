@@ -46,6 +46,7 @@
     "@stdlib/assert-is-plain-object": "^0.0.7",
     "@stdlib/ndarray-base-buffer": "^0.0.6",
     "@stdlib/ndarray-ctor": "^0.0.10",
+    "@stdlib/ndarray-defaults": "github:stdlib-js/ndarray-defaults#main",
     "@stdlib/string-format": "^0.0.3",
     "@stdlib/types": "^0.0.14"
   },
