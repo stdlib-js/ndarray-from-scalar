@@ -54,6 +54,11 @@ limitations under the License.
 To use in Observable,
 
 ```javascript
+scalar2ndarray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-from-scalar@umd/browser.js' )
+```
+The previous example will load the latest bundled code from the umd branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-from-scalar/tags). For example,
+
+```javascript
 scalar2ndarray = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-from-scalar@v0.1.0-umd/browser.js' )
 ```
 
@@ -66,7 +71,7 @@ var scalar2ndarray = require( 'path/to/vendor/umd/ndarray-from-scalar/index.js' 
 To include the bundle in a webpage,
 
 ```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-from-scalar@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-from-scalar@umd/browser.js"></script>
 ```
 
 If no recognized module system is present, access bundle contents via the global scope:
@@ -156,7 +161,7 @@ var v = x.get();
 <html lang="en">
 <body>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-from-scalar@v0.1.0-umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-from-scalar@umd/browser.js"></script>
 <script type="text/javascript">
 (function () {
 
