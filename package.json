@@ -44,11 +44,12 @@
     "@stdlib/assert-is-complex-like": "^0.1.1",
     "@stdlib/assert-is-number": "^0.1.1",
     "@stdlib/assert-is-plain-object": "^0.1.1",
+    "@stdlib/complex-dtype": "^0.1.1",
     "@stdlib/ndarray-base-buffer": "^0.1.1",
     "@stdlib/ndarray-ctor": "^0.1.0",
     "@stdlib/ndarray-defaults": "^0.1.1",
     "@stdlib/string-format": "^0.1.1",
-    "@stdlib/types": "^0.2.0"
+    "@stdlib/types": "^0.3.1"
   },
   "devDependencies": {
     "@stdlib/array-complex128": "^0.1.0",
