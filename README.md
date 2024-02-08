@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-from-scalar
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import scalar2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-from-scalar@deno/mod.js';
+var scalar2ndarray = require( '@stdlib/ndarray-from-scalar' );
 ```
 
 #### scalar2ndarray( value\[, options] )
@@ -81,8 +99,9 @@ The function accepts the following `options`:
 
 If a `dtype` option is not provided and `value`
 
--   is a `number`, the default [data type][@stdlib/ndarray/dtypes] is `'float64'`.
--   is a complex number object, the default [data type][@stdlib/ndarray/dtypes] is `'complex128'`.
+-   is a `number`, the default [data type][@stdlib/ndarray/dtypes] is the [default][@stdlib/ndarray/defaults] real-valued floating-point data type.
+-   is a complex number object of a known data type, the data type is the same as the provided value.
+-   is a complex number object of an unknown data type, the default [data type][@stdlib/ndarray/dtypes] is the [default][@stdlib/ndarray/defaults] complex-valued floating-point data type.
 -   is any other value type, the default [data type][@stdlib/ndarray/dtypes] is `'generic'`.
 
 To explicitly specify the [data type][@stdlib/ndarray/dtypes] of the returned [`ndarray`][@stdlib/ndarray/ctor], provide a `dtype` option.
@@ -128,8 +147,8 @@ var v = x.get();
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import scalar2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-from-scalar@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var scalar2ndarray = require( '@stdlib/ndarray-from-scalar' );
 
 // Get a list of data types:
 var dt = dtypes();
@@ -181,7 +200,7 @@ for ( i = 0; i < dt.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -244,13 +263,15 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-from-scalar/main/LICENSE
 
-[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor/tree/deno
+[@stdlib/ndarray/ctor]: https://github.com/stdlib-js/ndarray-ctor
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/deno
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
+
+[@stdlib/ndarray/defaults]: https://github.com/stdlib-js/ndarray-defaults
 
 <!-- <related-links> -->
 
-[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array/tree/deno
+[@stdlib/ndarray/array]: https://github.com/stdlib-js/ndarray-array
 
 <!-- </related-links> -->
 
