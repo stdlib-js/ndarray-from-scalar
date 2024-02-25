@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import scalar2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-from-scalar@deno/mod.js';
+import scalar2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-from-scalar@v0.2.1-deno/mod.js';
 ```
 
 #### scalar2ndarray( value\[, options] )
@@ -130,7 +130,7 @@ var v = x.get();
 
 ```javascript
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import scalar2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-from-scalar@deno/mod.js';
+import scalar2ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-from-scalar@v0.2.1-deno/mod.js';
 
 // Get a list of data types:
 var dt = dtypes();
