@@ -1,5 +1,19 @@
-"use strict";var f=function(i,r){return function(){return r||i((r={exports:{}}).exports,r),r.exports}};var v=f(function(T,l){
-var d=require('@stdlib/assert-has-own-property/dist'),y=require('@stdlib/assert-is-plain-object/dist'),c=require('@stdlib/assert-is-number/dist').isPrimitive,g=require('@stdlib/assert-is-complex-like/dist'),m=require('@stdlib/array-base-assert-is-accessor-array/dist'),q=require('@stdlib/array-base-accessor-setter/dist'),b=require('@stdlib/array-base-setter/dist'),w=require('@stdlib/ndarray-base-buffer/dist'),E=require('@stdlib/ndarray-ctor/dist'),p=require('@stdlib/ndarray-defaults/dist'),_=require('@stdlib/complex-dtype/dist'),u=require('@stdlib/error-tools-fmtprodmsg/dist'),x=p.get("order"),A=p.get("dtypes.real_floating_point"),L=p.get("dtypes.complex_floating_point");function O(i){var r,t,a,o,s,e,n;if(t={dtype:"",order:x,readonly:!1},arguments.length>1){if(r=arguments[1],!y(r))throw new TypeError(u('0jv2V',r));d(r,"dtype")&&(t.dtype=r.dtype),d(r,"order")&&(t.order=r.order),d(r,"readonly")&&(t.readonly=r.readonly)}if(o=c(i),t.dtype===""?o?e=A:g(i)?(e=_(i),e===null&&(e=L)):e="generic":e=t.dtype,a=w(e,1),a===null)throw new TypeError(u('0jvBf',"dtype",e));return/^complex/.test(e)&&o?n=[i,0]:n=i,m(a)?s=q(e):s=b(e),s(a,0,n),new E(e,a,[],[0],0,t.order,t)}l.exports=O
-});var h=v();module.exports=h;
-/** @license Apache-2.0 */
+"use strict";var f=function(i,r){return function(){return r||i((r={exports:{}}).exports,r),r.exports}};var v=f(function(F,l){"use strict";var p=require("@stdlib/assert-has-own-property"),y=require("@stdlib/assert-is-plain-object"),q=require("@stdlib/assert-is-number").isPrimitive,g=require("@stdlib/array-base-assert-is-complex-floating-point-data-type"),m=require("@stdlib/assert-is-complex-like"),c=require("@stdlib/assert-is-boolean").isPrimitive,b=require("@stdlib/array-base-assert-is-accessor-array"),E=require("@stdlib/array-base-accessor-setter"),L=require("@stdlib/array-base-setter"),O=require("@stdlib/ndarray-base-buffer"),_=require("@stdlib/ndarray-ctor"),o=require("@stdlib/ndarray-defaults"),w=require("@stdlib/complex-dtype"),u=require("@stdlib/string-format"),A=o.get("order"),T=o.get("dtypes.real_floating_point"),x=o.get("dtypes.complex_floating_point"),D=o.get("dtypes.boolean");function P(i){var r,a,t,s,n,e,d;if(a={dtype:"",order:A,readonly:!1},arguments.length>1){if(r=arguments[1],!y(r))throw new TypeError(u("invalid argument. Options argument must be an object. Value: `%s`.",r));p(r,"dtype")&&(a.dtype=r.dtype),p(r,"order")&&(a.order=r.order),p(r,"readonly")&&(a.readonly=r.readonly)}if(s=q(i),a.dtype===""?s?e=T:c(i)?e=D:m(i)?(e=w(i),e===null&&(e=x)):e="generic":e=a.dtype,t=O(e,1),t===null)throw new TypeError(u("invalid option. `%s` option must be a recognized data type. Option: `%s`.","dtype",e));return g(e)&&s?d=[i,0]:d=i,b(t)?n=E(e):n=L(e),n(t,0,d),new _(e,t,[],[0],0,a.order,a)}l.exports=P});var h=v();module.exports=h;
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2022 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
 //# sourceMappingURL=index.js.map
