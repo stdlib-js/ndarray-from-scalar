@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-04)
+## Unreleased (2025-12-19)
 
 <section class="features">
 
@@ -16,12 +16,23 @@
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`519b1d3`](https://github.com/stdlib-js/stdlib/commit/519b1d3f8c95f09c8f173083ed52ea0b051b7140) - improve type specificity
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`519b1d3`](https://github.com/stdlib-js/stdlib/commit/519b1d3f8c95f09c8f173083ed52ea0b051b7140) - **fix:** improve type specificity _(by Athan Reines)_
 -   [`2ffc422`](https://github.com/stdlib-js/stdlib/commit/2ffc422e0a5e583d45776ea7efc359186379bb0c) - **docs:** fix TSDoc return annotation values and example code _(by Philipp Burckhardt)_
 -   [`2c927e4`](https://github.com/stdlib-js/stdlib/commit/2c927e403da0ed8841b6ce19296262a88c9856e0) - **docs:** fix example code in TS declaration files _(by Philipp Burckhardt)_
 -   [`32bbcb3`](https://github.com/stdlib-js/stdlib/commit/32bbcb3b3dae1f028fd18166ee7875a93d44d0ee) - **refactor:** update paths _(by Athan Reines)_
