@@ -39,7 +39,6 @@
   "dependencies": {
     "@stdlib/array-base-accessor-setter": "^0.2.3",
     "@stdlib/array-base-assert-is-accessor-array": "^0.2.3",
-    "@stdlib/array-base-assert-is-complex-floating-point-data-type": "^0.2.2",
     "@stdlib/array-base-setter": "^0.2.3",
     "@stdlib/assert-has-own-property": "^0.2.3",
     "@stdlib/assert-is-boolean": "^0.2.3",
@@ -47,6 +46,7 @@
     "@stdlib/assert-is-number": "^0.2.3",
     "@stdlib/assert-is-plain-object": "^0.2.3",
     "@stdlib/complex-dtype": "^0.2.3",
+    "@stdlib/ndarray-base-assert-is-complex-floating-point-data-type": "^0.3.1",
     "@stdlib/ndarray-base-buffer": "^0.3.1",
     "@stdlib/ndarray-ctor": "^0.3.1",
     "@stdlib/ndarray-defaults": "^0.4.1",
