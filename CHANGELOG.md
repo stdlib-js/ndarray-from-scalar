@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`b8d09ca`](https://github.com/stdlib-js/stdlib/commit/b8d09cac262a732b639c44606e0d85f974965085) - **chore:** follow-up corrections for commits merged to develop on 2026-05-10 [(#12052)](https://github.com/stdlib-js/stdlib/pull/12052) _(by Philipp Burckhardt)_
 -   [`39693af`](https://github.com/stdlib-js/stdlib/commit/39693afb2e34914d2dec876faf3af05390827b6b) - **docs:** improve doctests for complex number typed arrays in `ndarray/from-scalar` [(#12043)](https://github.com/stdlib-js/stdlib/pull/12043) _(by Karan Anand)_
 -   [`bf821ca`](https://github.com/stdlib-js/stdlib/commit/bf821ca698340a14342ae1b12b5ea74b339f6adf) - **chore:** propagate recent fixes to sibling packages [(#11696)](https://github.com/stdlib-js/stdlib/pull/11696) _(by Philipp Burckhardt)_
 -   [`5aadc76`](https://github.com/stdlib-js/stdlib/commit/5aadc76d03d8e3c511de2f14131be73dfe118af9) - **bench:** refactor to use string interpolation in `ndarray` [(#11445)](https://github.com/stdlib-js/stdlib/pull/11445) _(by Karan Anand)_
